@@ -181,7 +181,7 @@ $(body_bg).load(function (){
 	//container散开
 	function style(){
 			
-			$(".content li img").animate({"margin":"5px","width":"150px","height":"130px"},300);
+			$(".content li img").animate({"margin":"5px","width":"128px","height":"171px"},300);
 	};
 	function CDispersion(s){
 		var width    = parseInt(bodyW/100*80);
@@ -191,7 +191,7 @@ $(body_bg).load(function (){
 			width_w  = width;
 			height_w = height;
 		var margin_1 = parseInt(width/2);
-		var margin_2 = parseInt(width-(width/100*80+192));
+		var margin_2 = parseInt(width-(width/100*80+128));
 		var margin_3 = parseInt(margin_2/2);
 		marLs        = margin_3;
 		var marginL  = margin_1-margin_3;
@@ -241,7 +241,7 @@ $(body_bg).load(function (){
 			"height":height_w+"px",	
 			"margin-top":"0px",
 			"margin-left":"0px"
-		},960,function (){
+		},640,function (){
 		style();	
 		});	
 	};
@@ -252,7 +252,7 @@ $(body_bg).load(function (){
 		UlObj.stop(true);
 		DivObj.stop(true);
 		clearTimeout(time);
-		if(parseInt(UlObj.css("width"))!=960){
+		if(parseInt(UlObj.css("width"))!=640){
 			var marginT=(height_w-854)/2;
 			var marginL=(width_w-640)/2;
 			Index=$(this).index();
@@ -303,10 +303,10 @@ $(body_bg).load(function (){
 		}
 		arr.sort(function(){ return 0.5 - Math.random() });
 		if(p==0){
-			Strong.css("left","192px");
+			Strong.css("left","128px");
 			ImgHD();
 		}else{
-			AObj.css("left","192px");
+			AObj.css("left","128px");
 			ImgHD();
 		};
 		
@@ -319,10 +319,10 @@ $(body_bg).load(function (){
 		};
 		arr.sort(function(){ return 0.5 - Math.random() });
 		if(p==0){
-			Strong.css("left","-192px");
+			Strong.css("left","-128px");
 			ImgHD_2();
 		}else{
-			AObj.css("left","-192px");
+			AObj.css("left","-128px");
 			ImgHD_2();
 		};
 		
@@ -338,14 +338,14 @@ $(body_bg).load(function (){
 					s=200;
 				};
 				Strong.eq(arr[i]).css("background","url("+ImgUrl[Index]+") "+leftP[arr[i]]+"% "+topP[arr[i]]+"%");
-				AObj.eq(arr[i]).animate({"left":"192px"},s,function (){
-					$(this).css("left","-192px");
+				AObj.eq(arr[i]).animate({"left":"128px"},s,function (){
+					$(this).css("left","-128px");
 				});	
 				Strong.eq(arr[i]).animate({"left":"0px"},s);
 				i++;
 				if(i<AObj.length){
 					if(y>0.5){
-						bg_3(960);
+						bg_3(640);
 					}else{
 						time = setTimeout(bg_3,20)
 					};
@@ -353,21 +353,21 @@ $(body_bg).load(function (){
 					p=1;
 				};
 			};			
-			bg_3(960);
+			bg_3(640);
 		}else{
 			function bg_4(s){
 				if(y<0.5){
 					s=200;
 				};
 				AObj.eq(arr[i]).css("background","url("+ImgUrl[Index]+") "+leftP[arr[i]]+"% "+topP[arr[i]]+"%");
-				Strong.eq(arr[i]).animate({"left":"192px"},s,function (){
-					$(this).css("left","-192px");						
+				Strong.eq(arr[i]).animate({"left":"128px"},s,function (){
+					$(this).css("left","-128px");						
 				});	
 				AObj.eq(arr[i]).animate({"left":"0px"},s);				
 				i++;
 				if(i<AObj.length){
 					if(y>0.5){
-						bg_4(960);
+						bg_4(640);
 					}else{
 						time = setTimeout(bg_4,20)
 					};
@@ -375,7 +375,7 @@ $(body_bg).load(function (){
 					p=0;
 				};
 			};			
-			bg_4(960);
+			bg_4(640);
 		};	
 	};
 	function ImgHD(){
@@ -389,14 +389,14 @@ $(body_bg).load(function (){
 					s=200;
 				};
 				Strong.eq(arr[i]).css("background","url("+ImgUrl[Index]+") "+leftP[arr[i]]+"% "+topP[arr[i]]+"%");
-				AObj.eq(arr[i]).animate({"left":"-192px"},s,function (){
-					$(this).css("left","192px");
+				AObj.eq(arr[i]).animate({"left":"-128px"},s,function (){
+					$(this).css("left","128px");
 				});	
 				Strong.eq(arr[i]).animate({"left":"0px"},s);
 				i++;
 				if(i<AObj.length){
 					if(y>0.5){
-						bg_1(960);
+						bg_1(640);
 					}else{
 						time = setTimeout(bg_1,20)
 					};
@@ -404,21 +404,21 @@ $(body_bg).load(function (){
 					p=1;
 				};
 			};			
-			bg_1(960);
+			bg_1(640);
 		}else{
 			function bg_2(s){
 				if(y<0.5){
 					s=200;
 				};
 				AObj.eq(arr[i]).css("background","url("+ImgUrl[Index]+") "+leftP[arr[i]]+"% "+topP[arr[i]]+"%");
-				Strong.eq(arr[i]).animate({"left":"-192px"},s,function (){
-					$(this).css("left","192px");						
+				Strong.eq(arr[i]).animate({"left":"-128px"},s,function (){
+					$(this).css("left","128px");						
 				});	
 				AObj.eq(arr[i]).animate({"left":"0px"},s);				
 				i++;
 				if(i<AObj.length){
 					if(y>0.5){
-						bg_2(960);
+						bg_2(640);
 					}else{
 						time = setTimeout(bg_2,20)
 					};
@@ -426,7 +426,7 @@ $(body_bg).load(function (){
 					p=0;
 				};
 			};			
-			bg_2(960);
+			bg_2(640);
 		};	
 	};
 });

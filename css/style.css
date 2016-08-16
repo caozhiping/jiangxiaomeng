@@ -8,7 +8,7 @@ img{display: block; border:none;}
 
 .banner{width: 100%; height: 100px; position: fixed; z-index: 1;}
 .jay{width: 263px; height: 200px; position: fixed; top: 6%; left: 10%; z-index: 0;}
-.container{width: 800px; height: 500px; position: fixed; top: 50%; left: 50%; margin-top: -250px; margin-left: -400px; z-index: 2;}
+.container{width: 640px; height: 854px; position: fixed; top: 50%; left: 50%; margin-top: -250px; margin-left: -400px; z-index: 2;}
 .content{width: 100%; height: 100%; position: relative; z-index: 3; }
 .content li{width: 128px; height: 171px; position: absolute; left: 42%; top: 160%; cursor: pointer; overflow: hidden; z-index: 9; background: #ffffff; box-shadow: 1px 1px 3px 0px #000000;
 transition: transform 1s;
