@@ -10,7 +10,7 @@ img{display: block; border:none;}
 .jay{width: 263px; height: 200px; position: fixed; top: 6%; left: 10%; z-index: 0;}
 .container{width: 800px; height: 500px; position: fixed; top: 50%; left: 50%; margin-top: -250px; margin-left: -400px; z-index: 2;}
 .content{width: 100%; height: 100%; position: relative; z-index: 3; }
-.content li{width: 160px; height: 100px; position: absolute; left: 42%; top: 160%; cursor: pointer; overflow: hidden; z-index: 9; background: #ffffff; box-shadow: 1px 1px 3px 0px #000000;
+.content li{width: 128px; height: 171px; position: absolute; left: 42%; top: 160%; cursor: pointer; overflow: hidden; z-index: 9; background: #ffffff; box-shadow: 1px 1px 3px 0px #000000;
 transition: transform 1s;
 -0-transition: -o-transform 1s;
 -moz-transition: -moz-transform 1s;
